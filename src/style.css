@@ -30,6 +30,7 @@ body {
 
 .nav__item {
   margin-right: 20px;
+  position: relative;
 }
 
 .nav__item:last-child {
@@ -46,6 +47,19 @@ body {
   padding: 0;
 }
 
+.is-active,
 .nav__link:hover {
   color: #00acdc;
+}
+
+.is-active::after {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  transform: translateX(-51.5%);
+  height: 4px;
+  width: 37px;
+  border-radius: 8px;
+  background-color: #00acdc;
 }
