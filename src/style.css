@@ -67,7 +67,7 @@ body {
   position: absolute;
   top: 56px;
   left: 50%;
-  transform: translateX(-55.5%);
+  transform: translateX(-50%);
   display: block;
   height: 4px;
   width: 37px;
