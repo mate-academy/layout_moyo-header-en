@@ -4,18 +4,17 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .logo {
   display: flex;
-  align-self: center;
+  align-items: center;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px 0 50px;
+  padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -34,11 +33,19 @@ body {
   position: relative;
 }
 
+.nav__item:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.nav__item:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
 .nav__link {
   height: 60px;
   line-height: 60px;
-  margin: 0;
-  padding: 0;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -63,7 +70,6 @@ body {
   top: 56px;
   left: 50%;
   transform: translateX(-51.5%);
-  display: block;
   height: 4px;
   width: 37px;
   background-color: #00acdc;
