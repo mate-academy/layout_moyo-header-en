@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px 0 50px;
+  padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -20,6 +20,10 @@ body {
   display: flex;
   align-self: center;
   height: 40px;
+}
+
+.nav {
+  box-sizing: border-box;
 }
 
 .logo__img {
@@ -63,10 +67,20 @@ body {
   position: absolute;
   top: 56px;
   left: 50%;
-  transform: translateX(-51.5%);
+  transform: translateX(-55.5%);
   display: block;
   height: 4px;
   width: 37px;
   background-color: #00acdc;
   border-radius: 8px;
+}
+
+.remove-pad-and-marg-1 {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.remove-pad-and-marg-2 {
+  padding-right: 0;
+  margin-right: 0;
 }
