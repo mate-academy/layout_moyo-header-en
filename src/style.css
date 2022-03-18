@@ -5,7 +5,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .header {
@@ -18,16 +17,11 @@ body {
 
 .logo {
   display: flex;
-  align-self: center;
   height: 40px;
 }
 
 .nav {
   box-sizing: border-box;
-}
-
-.logo__img {
-  align-self: center;
 }
 
 .nav__list {
@@ -53,8 +47,6 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   pointer-events: all;
-  margin: 0;
-  padding: 0;
 }
 
 .is-active,
@@ -68,19 +60,18 @@ body {
   top: 56px;
   left: 50%;
   transform: translateX(-50%);
-  display: block;
   height: 4px;
   width: 37px;
   background-color: #00acdc;
   border-radius: 8px;
 }
 
-.remove-pad-and-marg-1 {
+.nav__item:first-child {
   padding-left: 0;
   margin-left: 0;
 }
 
-.remove-pad-and-marg-2 {
+.nav__item:last-child {
   padding-right: 0;
   margin-right: 0;
 }
