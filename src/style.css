@@ -16,12 +16,7 @@ body {
 }
 
 .logo {
-  display: flex;
   height: 40px;
-}
-
-.nav {
-  box-sizing: border-box;
 }
 
 .nav__list {
@@ -32,21 +27,19 @@ body {
 }
 
 .nav__item {
-  display: flex;
-  align-items: center;
   margin: 0 5px;
   padding: 0 5px;
   position: relative;
 }
 
 .nav__link {
+  display: block;
   height: 60px;
   line-height: 60px;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  pointer-events: all;
 }
 
 .is-active,
