@@ -94,9 +94,8 @@ body {
   color: #00acdc;
 }
 
-.main {
-  background-color: yellowgreen;
-  width: 1200px;
-  padding: 10px;
-  margin: 0 auto;
+@media (max-width: 1024px) {
+  .header {
+    width: 1024px;
+  }
 }
