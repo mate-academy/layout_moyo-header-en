@@ -9,14 +9,10 @@ body {
 header {
   position: sticky;
   top: 0;
-
   display: flex;
   justify-content: space-between;
-
   width: 1200px;
-
   margin: 0 auto;
-
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -62,7 +58,6 @@ nav {
   font-size: 12px;
   text-transform: uppercase;
   text-align: right;
-
   color: #000;
 }
 
@@ -77,8 +72,8 @@ nav {
 }
 
 a.is-active:active {
-  text-decoration: underline;
-  color: #00acdc;
+  border-bottom: 4px solid #00acdc;
+  border-radius: 8px;
 }
 
 .nav-item:hover .nav-link {
@@ -87,6 +82,6 @@ a.is-active:active {
 
 @media (max-width: 1024px) {
   .header {
-    width: 1024px;
+    width: 500px;
   }
 }
