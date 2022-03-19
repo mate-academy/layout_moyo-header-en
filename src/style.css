@@ -1,1 +1,87 @@
-/* Styles go here */
+body {
+  margin: 0;
+}
+
+:root {
+  --link_padding: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  position: relative;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  background-image: url("./images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  list-style: none;
+  right: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.nav-list {
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: right;
+  color: #000;
+}
+
+.nav-item {
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: var(--link_padding);
+  color: #000;
+}
+
+a.is-active:active {
+  border-bottom: 4px solid #00acdc;
+  border-radius: 8px;
+}
+
+.nav-item:hover .nav-link {
+  color: #00acdc;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    width: 500px;
+  }
+}
