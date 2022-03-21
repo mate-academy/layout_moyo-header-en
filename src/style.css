@@ -10,14 +10,14 @@
   margin-left: 50px;
 }
 
-header {
+.header {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
 }
 
-nav {
+.nav {
   margin-right: 50px;
 }
 
@@ -25,19 +25,18 @@ nav {
   list-style: none;
 }
 
-li,
-a {
+.nav__list a {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-left: 16px;
+}
+
+.nav__list li a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
   text-decoration: none;
   color: #000;
-}
-
-.is-active {
-  margin-left: 0;
-  color: #00acdc;
-  position: relative;
 }
 
 .nav__list li {
@@ -47,10 +46,10 @@ a {
   text-transform: uppercase;
 }
 
-a {
-  padding-top: 23px;
-  padding-bottom: 23px;
-  margin-left: 16px;
+.is-active {
+  margin-left: 0;
+  color: #00acdc;
+  position: relative;
 }
 
 .nav__list li a:hover {
@@ -60,10 +59,10 @@ a {
 .is-active::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: 56px;
+  left: 0;
+  bottom: 0;
   height: 4px;
   width: 37px;
   background: #00acdc;
-  border-radius: 8;
+  border-radius: 8px;
 }
