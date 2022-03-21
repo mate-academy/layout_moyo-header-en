@@ -53,9 +53,9 @@ body {
 .is-active::after {
   content: "";
   position: absolute;
-  top: 56px;
-  left: 50%;
-  transform: translateX(-51.5%);
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 4px;
   width: 37px;
   border-radius: 8px;
