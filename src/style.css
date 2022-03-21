@@ -1,4 +1,5 @@
-body {
+body,
+.nav__list {
   margin: 0;
 }
 
@@ -11,20 +12,15 @@ html {
 .header {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
+  align-items: center;
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.logo {
-  margin-top: 10px;
 }
 
 .nav__list {
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 0;
 }
 
 .link {
@@ -38,9 +34,16 @@ html {
   margin-left: 20px;
 }
 
+.link:hover {
+  color: rgba(0, 172, 220, 1);
+}
+
+.nav__item:first-child .link {
+  margin-left: 0;
+}
+
 .is-active {
   color: rgba(0, 172, 220, 1);
-  margin-left: 0;
 }
 
 .is-active::after {
@@ -51,8 +54,4 @@ html {
   bottom: 0;
   right: 0;
   left: 0;
-}
-
-.link:hover {
-  color: rgba(0, 172, 220, 1);
 }
