@@ -30,22 +30,22 @@ body {
   display: block;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.nav-item {
+.nav__item {
   margin-left: 20px;
 }
 
-.nav-item:first-child {
+.nav__item:first-child {
   margin-left: 0;
 }
 
-.nav-link {
+.nav__link {
   position: relative;
   display: flex;
   align-items: center;
@@ -60,11 +60,11 @@ body {
   transition: color 0.3s;
 }
 
-.nav-link.is-active {
+.nav__link.is-active {
   color: #00acdc;
 }
 
-.nav-link.is-active::after {
+.nav__link.is-active::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -75,7 +75,7 @@ body {
   background-color: #00acdc;
 }
 
-.nav-item:hover .nav-link {
+.nav__item:hover .nav__link {
   color: #00acdc;
   cursor: pointer;
 }
