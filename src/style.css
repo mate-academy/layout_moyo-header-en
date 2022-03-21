@@ -69,13 +69,12 @@ body {
 }
 
 .is-active::after {
+  height: 4px;
+  border-radius: 8px;
   content: " ";
   position: absolute;
-  top: 56px;
-  left: 50%;
-  transform: translateX(-51%);
-  height: 4px;
-  width: 37px;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: #00acdc;
-  border-radius: 8px;
 }
