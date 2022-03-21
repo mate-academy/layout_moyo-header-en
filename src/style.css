@@ -1,14 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,700;1,400;1,700&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;   /* Paul asked to move here
+    if i understood correctly from the comments*/
+}
 
 body {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-size: 12px;
+  margin: 0;
 }
 
 .header {
-  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -16,48 +25,51 @@ body {
 .ul__list {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+
+  margin: 23px 50px 23px 0;
+
   list-style: none;
-  margin: 0 30px 0 0;
-  padding: 0;
 }
 
 .nav__link {
-  display: inline-block;
-  padding: 22.5px 0;
-  margin: 0 20px 0 0; /* tried to use margins only in right, Ihor suggested */
+  position: relative;
+
+  padding: 23px 0;
+  margin-left: 20px;
+
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.nav__link:hover {
-  color: #00acdc;
-}
-
+.nav__link:hover,
 .is-active {
   color: #00acdc;
-  padding: 22.5px 0 19px;
 }
 
 .is-active::after {
-  position: relative;
-  top: 19px;
-  content: "";
-  height: 4px;
   display: block;
-  background: #00acdc ;
+
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 4px;
   border-radius: 8px;
+
+  background: #00acdc ;
 }
 
 .logo {
   content: url(images/logo.png);
-  position: absolute;
-  top: 18px;
-  left: 58px;
-}
 
-@media(min-width: 1200px) {
-  .header {
-    width: 1200px;
-  }
+  position: relative;
+  left: 50px;
+
+  width: 40px;
+  height: 40px;
 }
