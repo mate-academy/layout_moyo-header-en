@@ -65,10 +65,8 @@ body {
   color: #000;
 }
 
-.nav-list > .nav-item::after {
+.nav-list > .nav-item .is-active::after {
   content: "";
-  position: absolute;
-  bottom: 0;
   border-bottom: 4px solid #00acdc;
   border-radius: 2px;
   display: block;
