@@ -1,5 +1,5 @@
 body,
-.nav__list {
+ul {
   margin: 0;
 }
 
@@ -23,7 +23,7 @@ html {
   padding: 0;
 }
 
-.link {
+.nav__link {
   display: flex;
   align-items: center;
   color: #000;
@@ -34,11 +34,11 @@ html {
   margin-left: 20px;
 }
 
-.link:hover {
+.nav__link:hover {
   color: rgba(0, 172, 220, 1);
 }
 
-.nav__item:first-child .link {
+.nav__item:first-child .nav__link {
   margin-left: 0;
 }
 
