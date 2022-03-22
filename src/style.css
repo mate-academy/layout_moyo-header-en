@@ -2,12 +2,14 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;   /* Paul asked to move here
-    if i understood correctly from the comments*/
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
 
 body {
-  font-size: 12px;
   margin: 0;
 }
 
@@ -16,18 +18,17 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  width: 100%;
-
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.ul__list {
+.nav__list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
   margin: 23px 50px 23px 0;
+  padding: 0;
 
   list-style: none;
 }
