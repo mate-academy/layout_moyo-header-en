@@ -7,7 +7,8 @@ html {
   font-size: 12px;
 }
 
-body {
+body,
+.nav__list {
   margin: 0;
 }
 
@@ -16,6 +17,7 @@ body {
   justify-content: space-between;
   padding: 0 50px;
   box-shadow: rgba(0, 0, 0, 0.45) 0 15px 10px -20px;
+  align-items: center;
 }
 
 .logo,
@@ -24,35 +26,24 @@ body {
   width: 40px;
 }
 
-.logo {
-  display: flex;
-  align-self: center;
-}
-
 .nav__list {
   display: flex;
   list-style-type: none;
   padding-left: 0;
-  margin: 0;
 }
 
 .nav__item {
   display: flex;
-  align-items: center;
   margin: 0 10px;
   position: relative;
 }
 
 .nav__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  line-height: 60px;
   height: 60px;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .nav__item:last-child {
@@ -71,7 +62,7 @@ body {
 .is-active::after {
   height: 4px;
   border-radius: 8px;
-  content: " ";
+  content: "";
   position: absolute;
   right: 0;
   left: 0;
