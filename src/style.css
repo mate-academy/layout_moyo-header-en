@@ -1,6 +1,4 @@
 /* Styles go here */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
 * {
   box-sizing: border-box;
 }
@@ -26,18 +24,25 @@ body {
   height: 40px;
 }
 
-.nav__item {
-  display: inline;
-}
-
 .nav__list {
+  display: flex;
+  flex-direction: row;
   list-style: none;
 }
 
+.link__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
   position: relative;
   text-decoration: none;
-  padding-bottom: 22px;
   margin: 10px;
   color: #000;
   font-weight: 500;
