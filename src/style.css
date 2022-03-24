@@ -1,12 +1,18 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 500;
 }
 
-body,
-.nav__list {
+body {
   margin: 0;
+}
+
+.page {
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.05);
+}
+
+.page_header {
+  margin: 0 auto;
 }
 
 * {
@@ -17,28 +23,29 @@ body,
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
   padding: 0 50px;
   background: #fff;
-  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.05);
+
 }
 
 .logo {
-  display: block;
-  width: 40px;
-  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .nav__list {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .nav__item {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.nav__item:first-child {
+.nav__item:last-child {
   margin-left: 0;
 }
 
@@ -47,7 +54,6 @@ body,
   display: flex;
   align-items: center;
   height: 60px;
-  white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
