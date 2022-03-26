@@ -8,29 +8,26 @@ body {
 }
 
 .page {
-  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .page_header {
   margin: 0 auto;
-}
 
-* {
-  box-sizing: border-box;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   padding: 0 50px;
   background: #fff;
 
 }
 
 .logo {
-  display: flex;
+  display: block;
   align-items: center;
 }
 
@@ -47,6 +44,7 @@ body {
 
 .nav__item:last-child {
   margin-left: 0;
+  margin-right: 0;
 }
 
 .nav__link {
