@@ -1,1 +1,63 @@
 /* Styles go here */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #00acdc;
+}
+
+.header {
+  /* 12px */
+  font-size: 0.75rem;
+  /* 60px */
+  height: 3.75rem;
+}
+
+.nav {
+  font-family: Roboto, sans-serif;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.nav__link {
+  line-height: 3.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__link:hover {
+  color: var(--blue);
+}
+
+.is-active:active {
+  border-bottom: 4px solid var(--blue);
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.absolute--left {
+  left: 50px;
+}
+
+.absolute--right {
+  right: 40px;
+}
+
+.logo {
+  height: 40px;
+}
