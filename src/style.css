@@ -10,14 +10,28 @@
 }
 
 .header {
+  position: relative;
   /* 12px */
   font-size: 0.75rem;
   /* 60px */
   height: 3.75rem;
 }
 
+.logo {
+  height: 40px;
+  /* center vertically */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
+
 .nav {
   font-family: Roboto, sans-serif;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
 }
 
 .nav__list {
@@ -64,26 +78,4 @@
   bottom: 0;
   left: 0;
   border-radius: 8px;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.absolute--left {
-  left: 50px;
-}
-
-.absolute--right {
-  right: 50px;
-}
-
-.logo {
-  height: 40px;
 }
