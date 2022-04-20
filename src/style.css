@@ -27,7 +27,15 @@
 }
 
 .nav__item {
-  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.nav__item:first-of-type {
+  margin-left: 0;
+}
+
+.nav__item:last-of-type {
+  margin-right: 0;
 }
 
 .nav__link {
@@ -73,7 +81,7 @@
 }
 
 .absolute--right {
-  right: 40px;
+  right: 50px;
 }
 
 .logo {
