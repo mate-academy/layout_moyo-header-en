@@ -25,7 +25,7 @@ body {
   /* background-color: blue;  */
 }
 
-.nav__ul {
+.nav__list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -33,12 +33,12 @@ body {
   /* background-color: red; */
 }
 
-.nav__list {
+.nav__item {
   text-transform: uppercase;
   /* border: 1px solid black; */
 }
 
-.nav__list:last-child {
+.nav__item:last-child {
   margin-right: 40px;
 }
 
