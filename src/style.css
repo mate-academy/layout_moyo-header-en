@@ -11,8 +11,6 @@ body {
 }
 
 .logo__image {
-  top: 10px;
-  bottom: 10px;
   height: 100%;
   width: 100%;
 }
@@ -22,7 +20,6 @@ body {
   align-items: center;
   padding: 0 50px;
   justify-content: flex-end;
-  /* background-color: blue; */
 }
 
 .nav__list {
@@ -30,13 +27,11 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  /* background-color: red; */
 }
 
 .nav__item {
   margin-left: 20px;
   text-transform: uppercase;
-  /* background-color: orange; */
 }
 
 .nav__item:first-child {
@@ -47,7 +42,7 @@ body {
   display: flex;
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #000;
   height: 60px;
   align-items: center;
   font-family: "Roboto", sans-serif;
@@ -57,6 +52,8 @@ body {
 
 .nav__link:hover {
   color: #00acdc;
+  transition-duration: 0.5s;
+
 }
 
 .nav__link.is-active {
@@ -68,7 +65,7 @@ body {
   content: "";
   display: block;
   height: 4px;
-  background: #00acdc;
+  background-color: #00acdc;
   bottom: 0;
   right: 0;
   left: 0;
