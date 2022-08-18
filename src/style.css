@@ -8,10 +8,11 @@ html {
   font-weight: 500;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -27,10 +28,11 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
+
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 20px;
+  
   color: #000;
 }
 
@@ -47,12 +49,18 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
+
   content: "";
   border-radius: 6px;
   height: 4px;
+
   background-color: #00acdc;
 }
 
-.nav__item:first-child .link {
+.nav__item {
+  margin-left: 20px;
+}
+
+.nav__item:first-child {
   margin-left: 0;
 }
