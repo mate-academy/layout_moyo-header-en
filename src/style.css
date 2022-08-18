@@ -1,1 +1,86 @@
-/* Styles go here */
+body {
+  margin: 0;
+  background-color: gainsboro;
+}
+
+.header {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1200px;
+  background-color: #fff;
+}
+
+.logo-container {
+  flex-shrink: 1;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  min-height: 60px;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
+  height: 100%;
+  margin: 0 50px 0 0;
+  list-style: none;
+}
+
+.list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  align-self: flex-end;
+  width: 37px;
+  height: 4px;
+  margin-left: 20px;
+  border-radius: 8px;
+  background: #00acdc;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.list-item:hover,
+.link:hover {
+  cursor: pointer;
+  color: #00acdc;
+}
+
+.is-active {
+  color: #00acdc;
+}
