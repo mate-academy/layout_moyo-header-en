@@ -6,6 +6,7 @@ body {
 .header {
   display: flex;
   min-width: 1024px;
+  width: 100%;
   flex-wrap: wrap;
   background-color: #fff;
 }
