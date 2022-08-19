@@ -6,7 +6,7 @@ body {
 .header {
   display: flex;
   min-width: 1024px;
-  max-width: 1200px;
+  flex-wrap: wrap;
   background-color: #fff;
 }
 
@@ -43,14 +43,14 @@ body {
   list-style: none;
 }
 
-.list::after {
+.is-active::after {
   content: "";
   position: absolute;
   bottom: 0;
   align-self: flex-end;
   width: 37px;
   height: 4px;
-  margin-left: 20px;
+  margin-left: -37px;
   border-radius: 8px;
   background: #00acdc;
 }
@@ -68,16 +68,17 @@ body {
   font-style: normal;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .link {
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
 .list-item:hover,
 .link:hover {
-  cursor: pointer;
   color: #00acdc;
 }
 
