@@ -1,1 +1,56 @@
 /* Styles go here */
+.list {
+  display: inline;
+  margin: 30px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+}
+
+.image {
+  margin: 10px;
+  /* box-sizing: border-box;
+  width: 50px;*/
+}
+
+.list2 {
+  display: inline;
+  margin: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  padding-bottom: 21px;
+  padding-top: 21px;
+}
+
+.link:hover {
+  color: #00acdc;
+
+}
+
+.is-active {
+  border-bottom: 4px solid #00acdc;
+  color: #00acdc;
+
+}
+
+.menu:hover {
+  outline-width: 5px;
+
+}
+
+.underline {
+  background-color: #00acdc;
+  width: 2px;
+  height: 4px;
+}
