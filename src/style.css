@@ -1,1 +1,93 @@
-/* Styles go here */
+:root {
+  --blue: #00acdc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, Arial, sans-serif;
+}
+/* now changing to px */
+body {
+  margin: 0;
+}
+
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+}
+
+.nav {
+  margin-right: 40px;
+  align-self: flex-end;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  align-items: baseline;
+}
+
+.nav__item {
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav__link {
+  padding: 23px 0 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.nav__link::after {
+  visibility: hidden;
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: var(--blue);
+  border-radius: 8px;
+  margin-top: 19px;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: var(--blue);
+}
+
+.nav__link:active::after {
+  visibility: visible;
+}
+
+/* the is-active class link */
+
+.is-active {
+  color: var(--blue);
+}
+
+.is-active::after {
+  content: "";
+  visibility: visible;
+  display: block;
+  height: 4px;
+  background-color: var(--blue);
+  border-radius: 8px;
+  margin-top: 19px;
+}
