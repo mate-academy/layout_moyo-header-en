@@ -1,5 +1,5 @@
 :root {
-  --blue: #00acdc;
+  --primary-color: #00acdc;
 }
 
 *,
@@ -8,15 +8,23 @@
   box-sizing: border-box;
 }
 
-html {
+.page {
   font-family: Roboto, Arial, sans-serif;
 }
 
-body {
+.page__content {
   margin: 0;
 }
 
+.page__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .header {
+  padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
@@ -25,69 +33,79 @@ body {
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
-  margin-left: 50px;
-}
-
-.nav {
-  margin-right: 40px;
-  align-self: flex-end;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__list {
-  padding: 0;
   margin: 0;
-  list-style: none;
+  padding: 0;
+  height: 60px;
 
+  list-style: none;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .nav__item {
-  margin: 0 10px;
-  display: flex;
-  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
 }
 
 .nav__link {
-  padding: 23px 0 0;
+  position: relative;
+  padding: 23px 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
 }
 
 .nav__link::after {
-  visibility: hidden;
   content: "";
-  display: block;
+
   height: 4px;
-  background-color: var(--blue);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  visibility: hidden;
+  background-color: var(--primary-color);
   border-radius: 8px;
-  margin-top: 19px;
 }
 
 .nav__link:hover,
 .nav__link:active {
-  color: var(--blue);
+  color: var(--primary-color);
 }
 
 .nav__link:active::after {
   visibility: visible;
 }
 
-/* the is-active class link */
+/* The is-active class link */
 
 .is-active {
-  color: var(--blue);
+  color: var(--primary-color);
 }
 
 .is-active::after {
   content: "";
-  visibility: visible;
-  display: block;
+
   height: 4px;
-  background-color: var(--blue);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  visibility: visible;
+  background-color: var(--primary-color);
   border-radius: 8px;
-  margin-top: 19px;
 }
