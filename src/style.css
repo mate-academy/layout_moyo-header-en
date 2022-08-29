@@ -10,7 +10,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
 
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -21,18 +20,18 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
+  height: 60px;
 }
 
 .nav__item {
   display: inline-block;
-  margin-left: 20px;
 }
 
 .nav__link {
   display: flex;
   font-family: "Roboto", sans-serif;
   position: relative;
-  padding: 22.5px 0 ;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -40,7 +39,8 @@ html {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
-
+  height: 60px;
+  margin-left: 20px;
 }
 
 .nav__link:hover {
@@ -49,13 +49,13 @@ html {
 
 .is-active {
   color: rgba(0, 172, 220, 1);
+  margin-left: 0;
 }
 
 .is-active::after {
   content: "";
   position: absolute;
   height: 4px;
-
   bottom: 0;
   right: 0;
   left: 0;
