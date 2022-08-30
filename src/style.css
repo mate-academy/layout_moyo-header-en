@@ -7,7 +7,10 @@ body {
 .flexbox {
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
+  gap: 20px;
   padding: 0 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
     
 .nav__list {
@@ -22,10 +25,10 @@ body {
 }
     
 .nav__link {
+  
   color: black;
   text-decoration: none;
   padding: 23px 0;
-  margin-right: 20px;
   padding-bottom: 22px;
 }
     
@@ -42,16 +45,6 @@ body {
   color: black;
 }
     
-/*ul li a {
-      padding-top: 23px;
-      text-decoration: none;
-      color: black;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 14px;
-      text-align: left;
-    }*/
-    
 .is-active::after {
   display: block;
   content: "";
@@ -59,7 +52,7 @@ body {
   background-color: #00acdc;
   border-radius: 8px;
   margin-top: 19px;
-  margin-right: 22px;
+  width: 37px;
 }
     
 a:hover {
