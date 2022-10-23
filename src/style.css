@@ -44,12 +44,10 @@ body {
 }
 
 .nav_link.is-active,
-.nav_link:hover,
-.nav_link:active {
+.nav_link:hover {
   color: #00acdc;
 }
 
-.nav_link:active::after,
 .is-active::after {
   content: "";
   border-radius: 5px;
