@@ -27,7 +27,7 @@ body {
   display: flex;
   align-self: stretch;
   list-style: none;
-  /* margin: 0 15px; */
+  padding: 0;
 }
 
 .logo {
@@ -42,7 +42,11 @@ body {
   padding: 0 10px;
 }
 
-.list-item:last-child {
+.list-item:first-of-type {
+  padding-left: 0;
+}
+
+.list-item:last-of-type {
   padding-right: 0;
 }
 
@@ -60,6 +64,7 @@ body {
 
 .links:hover {
   color: #00acdc;
+  margin-top: 10px;
 }
 
 .links.is-active {
