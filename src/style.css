@@ -75,9 +75,14 @@ body {
   position: absolute;
   content: "";
   height: 4px;
-  bottom: -22.5px;
+  bottom: 0;
+  top: 150%;
   right: 0;
   left: 0;
   color: black;
   background-color: #00acdc;
+}
+
+.links.is-active::after:hover {
+  padding: 200px;
 }
