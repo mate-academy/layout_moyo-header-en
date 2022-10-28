@@ -17,10 +17,12 @@ body {
   justify-content: space-between;
   box-shadow: 0 2px 4px 0 #0000000d;
   padding: 0 50px;
+  margin: 0;
 }
 
 .main-nav {
   display: flex;
+  margin: 0;
 }
 
 .main-nav-list {
@@ -39,15 +41,6 @@ body {
 .list-item {
   display: flex;
   align-self: center;
-  padding: 0 10px;
-}
-
-.list-item:first-of-type {
-  padding-left: 0;
-}
-
-.list-item:last-of-type {
-  padding-right: 0;
 }
 
 .links {
@@ -60,11 +53,15 @@ body {
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
+  padding: 10px;
+}
+
+.list-item.links:last-of-type {
+  padding-right: 0;
 }
 
 .links:hover {
   color: #00acdc;
-  margin-top: 10px;
 }
 
 .links.is-active {
@@ -76,13 +73,9 @@ body {
   content: "";
   height: 4px;
   bottom: 0;
-  top: 150%;
-  right: 0;
-  left: 0;
+  top: 125%;
+  right: 10px;
+  left: 10px;
   color: black;
   background-color: #00acdc;
-}
-
-.links.is-active::after:hover {
-  padding: 200px;
 }
