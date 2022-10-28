@@ -59,11 +59,6 @@ a {
   color: rgba(0, 172, 220, 1);
 }
 
-.text-4 {
-  letter-spacing: normal;
-  font-weight: bold;
-}
-
 .text-1:active {
   color: rgba(0, 172, 220, 1);
 }
