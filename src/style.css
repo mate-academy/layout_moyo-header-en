@@ -1,1 +1,94 @@
-/* Styles go here */
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+.header {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+}
+
+.image {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.nav {
+  margin-right: 50px;
+}
+
+.text {
+  --height: 60px;
+
+  height: var(--height);
+  line-height: var(--height);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.list {
+  display: inline-block;
+  padding-left: 16px;
+  height: 100%;
+  margin: 0;
+}
+
+.list__apple {
+  padding-left: 0;
+  height: 56px;
+  border-bottom: 4px solid rgba(0, 172, 220, 1);
+}
+
+.text-1 {
+  color: rgba(0, 172, 220, 1);
+}
+
+.text-4 {
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+.text-1:active {
+  color: rgba(0, 172, 220, 1);
+}
+
+.text-4:hover {
+  color: rgba(0, 172, 220, 1);
+  font-size: 12px;
+}
+
+.text:hover {
+  color: rgba(0, 172, 220, 1);
+  font-size: 12px;
+}
+
+/* .list__apple::after {
+  content: "";
+  position: relative;
+  bottom: 0;
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #000;
+}
+
+.list__apple:hover::after {
+  width: 100%;
+  left: 0;
+} */
