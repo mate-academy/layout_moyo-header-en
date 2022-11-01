@@ -9,24 +9,52 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="/">
-          <img src="./images/logo.png"
-          class="navbar__logo" alt="Moyo's Logo">
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo image">
         </a>
-        <ul class="navbar__item">
-          <li><a class="is__active" href="/apple">apple</a></li>
-          <li><a href="/samsung">samsung</a></li>
-          <li><a href="/smartphones">smartphones</a></li>
-          <li><a data-qa="hover" href="/laptops-and-computers">laptops & computers</a></li>
-          <li><a href="/gadgets">gadgets</a></li>
-          <li><a href="/tablets">tablets</a></li>
-          <li><a href="/photo">photo</a></li>
-          <li><a href="/video">video</a></li>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item-first">
+            <a
+              class="nav__link is-active"
+              href=" #apple"
+            >
+              Apple
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href=" #samsung">Samsung</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#smartphones">Smartphones</a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="#l-and-c"
+              data-qa="hover"
+            >
+              Laptops & Computers
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#gadgets">Gadgets</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#tablets">Tablets</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#photo">Photo</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#video">Video</a>
+          </li>
         </ul>
+
       </nav>
     </header>
-    <h1>Moyo header</h1>
   </body>
 </html>

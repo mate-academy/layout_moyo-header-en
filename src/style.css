@@ -1,48 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
 body {
   margin: 0;
-  width: calc(100%);
 }
 
-.navbar {
-  height: 60px;
-  box-sizing: border-box;
+.header {
   display: flex;
-  background-color: white;
-  align-items: center;
-  place-content: space-between;
-  padding: 0 32px;
-  border-bottom: 1px solid #eaeaea;
+  height: 60px;
+  padding: 0 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.navbar__item {
-  list-style: none;
-  display: inline-flex;
-  height: 100%;
+.logo {
+  flex-grow: 1;
+  padding: 10px 0;
+}
+
+.nav__list {
   margin: 0;
-  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  align-items: center;
+  padding: 0;
+  display: flex;
+  list-style: none;
 }
 
-.navbar__item li a {
-  text-transform: capitalize;
-  padding: 19px 12px;
-  margin: 2px;
-  text-decoration: none;
+.nav__item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.nav__item-first {
+  padding-left: 0;
+}
+
+.nav__link {
+  display: inline-block;
   color: #000;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: 23px 0;
 }
 
-.navbar__item li a:hover {
+.nav__link:hover {
   color: #00acdc;
 }
 
-.navbar__logo {
-  width: 40px;
-  height: 40px;
+.is-active {
+  color: #00acdc;
 }
 
-.is__active {
-  color: #00acdc !important;
-  border-bottom: 2px solid #00acdc;
+.is-active::after {
+  display: block;
+  position: absolute;
+
+  height: 4px;
+  background-color: #00acdc;
+  border-radius: 8px;
+  content: " ";
+
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
