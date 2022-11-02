@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-  font-style: bold;
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
@@ -23,10 +23,6 @@ body {
   height: 40px;
 }
 
-.is-active {
-  color: #00acdc;
-}
-
 .nav__list {
   margin: 0;
   padding: 0;
@@ -35,7 +31,7 @@ body {
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .nav__link {
@@ -51,6 +47,10 @@ body {
 }
 
 .nav__link:hover {
+  color: #00acdc;
+}
+
+.is-active {
   color: #00acdc;
 }
 
