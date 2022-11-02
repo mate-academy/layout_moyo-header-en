@@ -50,10 +50,6 @@ body {
   transition: color 0.4s;
 }
 
-.nav__link:visited {
-  color: #000;
-}
-
 .nav__link:hover {
   color: #00acdc;
 }
