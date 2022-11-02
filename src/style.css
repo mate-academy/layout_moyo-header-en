@@ -1,14 +1,12 @@
 /* Styles go here */
-html {
+body {
   margin: 0;
-  padding: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
   padding: 0 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   background: #fff;
@@ -17,6 +15,8 @@ html {
 .nav__list {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav__link {
@@ -35,10 +35,12 @@ html {
   margin-left: 20px;
 }
 
-.logo {
-  width: 40px;
+.link__logo {
   height: 40px;
+}
 
+.logo {
+  height: 40px;
 }
 
 .nav__link:hover,
