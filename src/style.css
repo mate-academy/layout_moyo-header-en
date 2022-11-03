@@ -1,1 +1,103 @@
 /* Styles go here */
+:root {
+  --blue: #00acdc;
+}
+
+body {
+  margin: 0;
+}
+
+.site__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 0 50px;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  height: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  min-width: 1024px;
+}
+
+.nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 20px;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__link {
+  position: relative;
+  height: 60px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.nav__link.is-active {
+  color: var(--blue);
+  border-bottom: 4px var(--blue);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.nav__link:hover {
+  color: var(--blue);
+}
+
+.is-active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  color: var(--blue);
+  background-color: var(--blue);
+  border-radius: 2px;
+}
+
+.apple {
+  color: var(--blue);
+  border-bottom: 4px solid var(--blue);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.nav__link:focus {
+  color: var(--blue);
+  border-bottom: 4px solid var(--blue);
+  border-radius: 2px;
+  z-index: 1;
+}
