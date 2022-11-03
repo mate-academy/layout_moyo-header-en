@@ -22,6 +22,7 @@ body {
   display: flex;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
+  
 }
 
 .nav__item {
@@ -57,5 +58,5 @@ body {
   background-color: #00acdc;
   width: 37px;
   height: 4px;
-  margin-top: 22.5px;
+  margin-top: 18.5px;
 }
