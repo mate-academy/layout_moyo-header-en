@@ -11,34 +11,37 @@ body {
   margin: 0;
 }
 
-.container {
+.header {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
 }
 
-ul {
+.nav {
+  position: relative;
+}
+
+.nav__list {
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-li {
+.nav__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  padding: 22.5px 0;
   margin-left: 20px;
 }
 
-a {
-  cursor: pointer;
-  padding: 15px 0;
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
-}
-
-a:hover {
+.nav__link:hover {
   text-decoration: underline;
   text-decoration-color: #00acdc;
   text-decoration-thickness: 2px;
@@ -47,28 +50,24 @@ a:hover {
 
 .is-active {
   color: #00acdc;
-}
-
-img {
-  padding: 10px 0;
+  position: relative;
+  padding-bottom: 22.5px;
 }
 
 .is-active::after {
-  position: relative;
+  position: absolute;
   content: "";
   display: block;
   height: 4px;
+  width: 37px;
   background: #00acdc;
   border-radius: 2px;
-  top: 21px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.is-active:hover::after {
-  border: 1px solid #00acdc;
-}
-
-.img {
-  margin: 0;
-  padding: 0;
-  height: 60px;
+img {
+  height: 40px;
+  padding: 10px 0;
 }
