@@ -84,6 +84,13 @@ body {
   z-index: 1;
 }
 
+.apple {
+  color: #00acdc;
+  border-bottom: 4px solid #00acdc;
+  border-radius: 2px;
+  z-index: 1;
+}
+
 .nav a:focus {
   border-bottom: 4px solid #00acdc;
   border-radius: 2px;
