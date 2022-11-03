@@ -1,4 +1,8 @@
 /* Styles go here */
+:root {
+  --blue: #00acdc;
+}
+
 body {
   margin: 0;
 }
@@ -30,7 +34,6 @@ body {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  max-width: 1200px;
   min-width: 1024px;
 }
 
@@ -63,9 +66,15 @@ body {
   transition: color 0.3s;
 }
 
-.nav__link.is-active,
+.nav__link.is-active {
+  color: var(--blue);
+  border-bottom: 4px var(--blue);
+  border-radius: 2px;
+  z-index: 1;
+}
+
 .nav__link:hover {
-  color: #00acdc;
+  color: var(--blue);
 }
 
 .is-active::after {
@@ -74,25 +83,21 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background-color: #00acdc;
+  color: var(--blue);
+  background-color: var(--blue);
   border-radius: 2px;
-}
-
-.nav a:active {
-  border-bottom: 4px solid #00acdc;
-  border-radius: 2px;
-  z-index: 1;
 }
 
 .apple {
-  color: #00acdc;
-  border-bottom: 4px solid #00acdc;
+  color: var(--blue);
+  border-bottom: 4px solid var(--blue);
   border-radius: 2px;
   z-index: 1;
 }
 
-.nav a:focus {
-  border-bottom: 4px solid #00acdc;
+.nav__link:focus {
+  color: var(--blue);
+  border-bottom: 4px solid var(--blue);
   border-radius: 2px;
   z-index: 1;
 }
