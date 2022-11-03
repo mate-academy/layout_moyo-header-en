@@ -37,8 +37,10 @@ body {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
-  padding: 22.5px 0;
+  padding: 23px 0;
   margin-left: 20px;
+  height: 15px;
+  width: 37px;
 }
 
 .nav__link:hover {
@@ -51,7 +53,11 @@ body {
 .is-active {
   color: #00acdc;
   position: relative;
-  padding-bottom: 22.5px;
+  text-decoration: none;
+  padding: 23px 0;
+  height: 15px;
+  width: 37px;
+
 }
 
 .is-active::after {
