@@ -1,11 +1,6 @@
-body,
-ul,
-li {
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -50,7 +45,10 @@ body {
   color: #000;
 }
 
-.nav__link:hover,
+.nav__link:hover {
+  color: #00acdc;
+}
+
 .is-active {
   color: #00acdc;
 }
