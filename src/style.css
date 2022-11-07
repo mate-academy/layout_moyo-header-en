@@ -49,6 +49,7 @@ li {
   text-transform: uppercase;
   color: #000;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .nav__link:visited {
@@ -57,6 +58,7 @@ li {
 
 .nav__link:hover {
   color: #00acdc;
+  cursor: pointer;
 }
 
 .is-active {
