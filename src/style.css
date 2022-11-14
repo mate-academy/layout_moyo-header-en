@@ -1,1 +1,42 @@
-/* Styles go here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.logo {
+  margin-left: 2.5%;
+  flex-grow: 3;
+}
+
+.nav {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav__list {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px ;
+  text-transform: uppercase;
+}
+
+.nav__list:hover {
+  color: aqua;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+}
+
+.is-active {
+  color: aqua;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+}
