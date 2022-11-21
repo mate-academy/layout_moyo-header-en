@@ -1,91 +1,85 @@
 * {
-  padding: 0;
   margin: 0;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-.container {
-  box-sizing: border-box;
   padding: 0;
-  line-height: 100%;
-  float: right;
+  box-sizing: border-box;
 }
 
-.elem {
-  margin-left: 20px;
-  margin-top: 18px;
+.header {
+  margin: 20px auto 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo__image {
+  margin-left: 50px;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}
+
+nav .nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.nav__item {
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav__link {
   font-weight: 500px;
   font-size: 12px;
   list-style-type: none;
   font-family: Roboto, sans-serif;
-  vertical-align: middle;
   text-transform: uppercase;
-  display: inline-block;
 }
 
-.elem:hover {
+.nav__link:hover {
   text-decoration: underline;
-  text-decoration-color: #00acdc;
-}
-
-.nav-elems {
-  width: 100%;
-  display: inline-block;
-}
-
-.elems {
-  size: 10px;
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0;
+  color: #00acdc;
 }
 
 #first:hover {
   text-decoration: underline;
 }
 
-.color {
-  color: #00acdc;
+.is-active {
+  position: relative;
 }
 
-.pic {
-  margin-left: 50px;
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 40px;
-  width: 40px;
+.LAPTOP {
+  min-width: 138px;
 }
 
-.bigcont {
-  background-color: #fff;
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
-  padding-left: 0;
-  box-sizing: border-box;
-  display: flex;
-}
-
-#last {
-  margin-right: 50px;
-}
-
-.LAPTOP:hover {
-  color: #00acdc;
-}
-
-.is-active:active {
-  border-bottom: 4px solid #00acdc;
-  margin-bottom: 18px;
-}
-
-.first {
-  border-bottom: 4px solid #00acdc;
-  margin-bottom: 18px;
+.is-active::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: -23px;
+  left: 0;
+  border-radius: 8px;
+  background-color: #00acdc;
 }
