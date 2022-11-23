@@ -1,8 +1,10 @@
 /* Styles go here */
+* {
+  box-sizing: border-box;
+}
 
 .body {
   margin: 0;
-  box-sizing: border-box;
 }
 
 .header {
@@ -26,15 +28,11 @@
   padding: 0;
 }
 
-.nav-list-item {
+.nav-list-item:not(:first-child) {
   margin-left: 20px;
 }
 
-.nav-list-item:first-child {
-  margin-left: 0;
-}
-
-.nav-list-item > a {
+.link {
   text-decoration: none;
   position: relative;
   display: flex;
@@ -50,15 +48,15 @@
   transition: color 0.3s;
 }
 
-.nav-list-item > a:hover {
+.link:hover {
   color: #00acdc;
 }
 
-.nav-list-item > a.is-active {
+.is-active {
   color: #00acdc;
 }
 
-.nav-list-item > a.is-active::after {
+.is-active::after {
   content: "";
   background-color: #00acdc;
   position: absolute;
