@@ -1,1 +1,99 @@
-/* Styles go here */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*__________ Header __________*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+/*__________ Header logo__________*/
+
+.header__logo {
+  margin: 10px 0;
+}
+
+.logo__link {
+  display: flex;
+}
+
+/*__________ Header nav links __________*/
+
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+.nav__item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.nav__links:hover {
+  color: #00acdc;
+}
+
+.nav__links:active,
+.nav__links:focus {
+  outline: 0;
+  color: #00acdc;
+}
+
+.nav__links:active::after,
+.nav__links:focus::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #00acdc;
+  border-radius: 8px;
+}
+
+.is-active {
+  color: #00acdc;
+}
+
+.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #00acdc;
+  border-radius: 8px;
+}
