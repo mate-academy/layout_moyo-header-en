@@ -11,19 +11,19 @@
   <body>
     <h1>Moyo header</h1>
     <header class="nav-bar">
-      <img src="/Users/tommasogiacopini/HTML/my_project/PROJECTS/layout_moyo-header-en/src/images/logo.png" alt="MOYO logo"
-      >
+      <div class="nav-bar-left"><img src="/Users/tommasogiacopini/HTML/my_project/PROJECTS/layout_moyo-header-en/src/images/logo.png" alt="MOYO logo">
+      </div>
       <nav>
-        <ul class="nav-list">
-          <li class="nav-element"><a href="#apple">APPLE</a></li>
-          <li class="nav-element"><a href="#samsung">SAMSUNG</a></li>
-          <li class="nav-element"><a href="#smartphones">SMARTPHONES</a></li>
-          <li class="nav-element"><a href="#laptopsandcomputers">LAPTOPS & COMPUTERS</a></li>
-          <li class="nav-element"><a href="#gadgets">GADGETS</a></li>
-          <li class="nav-element"><a href="#tablets">TABLETS</a></li>
-          <li class="nav-element"><a href="#photo">PHOTO</a></li>
-          <li class="nav-element"><a href="#video">VIDEO</a></li>
-        </ul>
+        <div class="nav-list">
+          <a class="is-active" href="#apple">APPLE</a>
+          <a class="nav-element" href="#samsung">SAMSUNG</a>
+          <a class="nav-element" href="#smartphones">SMARTPHONES</a>
+          <a class="nav-element" data-qa="hover" href="#laptopsandcomputers">LAPTOPS & COMPUTERS</a>
+          <a class="nav-element" href="#gadgets">GADGETS</a>
+          <a class="nav-element" href="#tablets">TABLETS</a>
+          <a class="nav-element" href="#photo">PHOTO</a>
+          <a class="nav-element" href="#video">VIDEO</a>
+        </div>
       </nav>
     </header>
   </body>
