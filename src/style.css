@@ -6,29 +6,34 @@
   }
 
   @font-face {
-    font-family: roboto;
-    src: url();
+    font-family: 'Roboto' sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
   }
+
+a {
+  font-weight: 500;
+  font-family: sans-serif;
+}
 
 .nav-bar {
   display: flex;
   flex-direction: row;
   width: auto;
-  justify-content: flex-end;
 }
 
 .nav-bar-left {
- float: left;
+ justify-content: start;
 }
 
 .nav-bar:hover {
   border: solid 3px blue;
 }
 
-.nav-list {
+.nav-bar-right {
   color: black;
   list-style-type: none;
   padding: 15px;
+  justify-content: end;
 }
 
 .nav-element {
