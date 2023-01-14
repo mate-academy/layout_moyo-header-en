@@ -13,28 +13,24 @@
 a {
   font-weight: 500;
   font-family: sans-serif;
+  line-height: 30px;
 }
 
 .nav-bar {
   display: flex;
   flex-direction: row;
   width: auto;
-  justify-content: space-around;
-}
-
-.nav-bar-left {
- justify-content: start;
+  height: 60px;
+  justify-content: flex-end;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  color: black;
+  list-style-type: none;
+  padding-left: 0px;
+  padding-right: 50px;
 }
 
 .nav-bar:hover {
-  border: solid 3px blue;
-}
-
-.nav-bar-right {
-  color: black;
-  list-style-type: none;
-  padding: 15px;
-  justify-content: end;
+  border: solid 3px #00ACDC;
 }
 
 .nav-element {
@@ -45,13 +41,19 @@ a {
 }
 
 a:hover {
-  text-decoration: underline blue;
+  text-decoration: underline #00ACDC;
 }
 
 .is-active {
-  color: blue;
+  color: #00ACDC;
   display: inline-block;
   margin: 15px;
   text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  left: 50px;
+  top: 11px;
 }
 
