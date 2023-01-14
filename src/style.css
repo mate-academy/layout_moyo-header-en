@@ -19,6 +19,7 @@ a {
   display: flex;
   flex-direction: row;
   width: auto;
+  justify-content: space-around;
 }
 
 .nav-bar-left {
