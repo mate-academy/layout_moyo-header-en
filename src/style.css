@@ -1,14 +1,9 @@
 /* Styles go here */
 
-* {
-  margin: 0;
-  padding: 0;
-  }
-
-  @font-face {
-    font-family: 'Roboto' sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-  }
+@font-face {
+  font-family: "Roboto" sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+}
 
 a {
   font-weight: 500;
@@ -21,15 +16,14 @@ a {
   flex-direction: row;
   width: auto;
   justify-content: flex-end;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0.1px 2px 4px rgba(0, 0, 0.05);
   color: black;
   list-style-type: none;
-  padding-left: 0px;
   padding-right: 50px;
 }
 
 .nav-bar:hover {
-  border: solid 3px #00ACDC;
+  border: solid 3px #00acdc;
 }
 
 .nav-element {
@@ -41,11 +35,11 @@ a {
 }
 
 a:hover {
-  text-decoration: underline #00ACDC;
+  text-decoration: underline #00acdc;
 }
 
 .is-active {
-  color: #00ACDC;
+  color: #00acdc;
   display: inline-block;
   margin: 15px;
   text-decoration: none;
@@ -54,6 +48,7 @@ a:hover {
 .logo {
   position: absolute;
   left: 50px;
-  top: 11px;
+  top: 20px;
+  margin: 0;
+  padding: 0;
 }
-
