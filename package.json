@@ -40,7 +40,5 @@
       "bem": false
     }
   },
-  "dependencies": {
-    "parcel": "1.12.3"
-  }
+  "dependencies": {}
 }
