@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
+  --main-color: #00acdc;
 }
 
 .header {
@@ -10,22 +11,21 @@ body {
   justify-content: space-between;
 }
 
-.nav-list {
+.nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 60px; */
 }
 
-.nav-item {
+.nav__item {
   display: block;
   margin-right: 20px;
 }
 
-.nav-link {
+.nav__link {
   position: relative;
   text-decoration: none;
   color: #000;
@@ -35,18 +35,18 @@ body {
   line-height: 60px;
 }
 
-.nav-item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.logo-link {
+.logo__link {
   height: 40px;
   margin-right: 20px;
 }
 
 .is-active,
-.nav-link:hover {
-  color: #00acdc;
+.nav__link:hover {
+  color: var(--main-color);
   cursor: pointer;
 }
 
@@ -55,7 +55,7 @@ body {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #00acdc;
+  background-color: var(--main-color);
   position: absolute;
   bottom: 0;
   left: 0;
