@@ -19,23 +19,18 @@ body {
   height: 40px;
 }
 
-.nav--bar {
-  display: block;
-}
-
-.nav--list {
+.nav__list {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
-
 }
 
-.nav--item:not(:first-child) {
+.nav__item:not(:first-child) {
   padding-left: 20px;
 }
 
-.nav--link {
+.nav__link {
   position: relative;
   font-style: normal;
   font-size: 12px;
@@ -43,15 +38,16 @@ body {
   text-decoration: none;
   color: #000;
   height: 60px;
-  padding: 22px 0;
+  padding: 23px 0;
 }
 
-.nav--link:hover,
+.nav__link:hover,
 .is-active {
   color: #00acdc;
 }
 
 .is-active::after {
+  margin: 0;
   content: "";
   background-color: #00acdc;
   position: absolute;
