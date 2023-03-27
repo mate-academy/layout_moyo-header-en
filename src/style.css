@@ -20,7 +20,7 @@ body {
   height: 60px;
 }
 
-.nav__ul {
+.nav__list {
   display: flex;
   align-items: center;
   list-style: none;
@@ -28,11 +28,12 @@ body {
   padding: 0;
 }
 
-.nav__li {
+.nav__item {
   margin: 0 10px;
+  position: relative;
 }
 
-.nav__li:nth-child(8) {
+.nav__item:nth-child(8) {
   margin-right: 0;
 }
 
@@ -40,7 +41,7 @@ body {
   margin-right: 50px;
 }
 
-.nav__a {
+.nav__link {
   color: black;
   font-size: 12px;
   text-decoration: none;
@@ -53,12 +54,11 @@ body {
   color: #00acdc;
 }
 
-.nav__a:hover {
+.nav__link:hover {
   color: #00acdc;
 }
 
-.nav__li:first-child {
-  position: relative;
+.nav__item:first-child {
   margin-left: 0;
 }
 
@@ -68,7 +68,7 @@ body {
   display: block;
   background-color: #00acdc;
   height: 4px;
-  width: 37px;
+  width: 100%;
   bottom: 0;
   border-radius: 8px;
 }
