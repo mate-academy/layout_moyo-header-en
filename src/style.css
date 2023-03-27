@@ -32,8 +32,12 @@ body {
   margin: 0 10px;
 }
 
+.nav__li:nth-child(8) {
+  margin-right: 0;
+}
+
 .nav {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .nav__a {
@@ -55,6 +59,7 @@ body {
 
 .nav__li:first-child {
   position: relative;
+  margin-left: 0;
 }
 
 .is-active::after {
