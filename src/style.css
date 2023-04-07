@@ -1,16 +1,18 @@
-/* general styles */
 :root {
   --main-color: #00acdc;
 }
 
 * {
+  box-sizing: border-box;
+}
+
+body {
   font-family: Roboto, sans-serif;
   font-size: 12px;
   margin: 0;
   padding: 0;
 }
 
-/* header styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -20,12 +22,10 @@
   padding: 0 50px;
 }
 
-/* logo styles */
 .logo__link {
   display: block;
 }
 
-/* navigation styles */
 .nav__list {
   display: flex;
   list-style: none;
