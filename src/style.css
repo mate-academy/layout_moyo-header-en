@@ -1,4 +1,7 @@
-/* Styles go here */
+:root {
+  --blue: #00acdc;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,14 +25,12 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .nav__list {
   margin: 0;
   padding: 0;
-  position: relative;
   display: flex;
 }
 
@@ -41,7 +42,6 @@ html {
 
 .nav__link {
   display: block;
-  position: relative;
   text-decoration: none;
   color: black;
 }
@@ -51,7 +51,7 @@ html {
 }
 
 .is-active {
-  color: #00acdc;
+  color: var(--blue);
   position: relative;
 }
 
@@ -61,11 +61,11 @@ html {
   width: 100%;
   height: 4px;
   bottom: 0;
-  background-color: #00acdc;
+  background-color: var(--blue);
   border-radius: 8px;
   display: block;
 }
 
 .nav__link:hover {
-  color: #00acdc;
+  color: var(--blue);
 }
